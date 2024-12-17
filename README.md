@@ -1,5 +1,7 @@
 This is a demo Lyrebird clone implemented in TypeScript using Next.js/React as the base framework, redux for state managment and redux-saga for async actions.
 
+It focuses on the user-experience of a scribe system and explores the possibility of the doctor requesting additional actions within the dictated transcript instead of having to interact with the application by clicking. In the example the doctor says "Write a letter to a sleep physician..." and the system generates an additional output with the letter.
+
 ## Development
 
 First set the `OPENAI_API_KEY` environment variable. Then run the development server:
