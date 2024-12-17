@@ -18,6 +18,8 @@ interface Props {
   action?(newValue: string): Action;
 
   loading?: boolean;
+
+  copyButton?: boolean;
 }
 
 export function TextColumn(props: Props) {
@@ -34,12 +36,22 @@ export function TextColumn(props: Props) {
     }
   }
 
+  function copyToClipboard() {
+    navigator.clipboard.writeText(text);
+  }
+
   return (
     <div className={css.container}>
       <div className={css.headingContainer}>
         <div>{props.title}</div>
         {/* dummy button so header in all columns has the same height */}
         <button className="button is-invisible">Dummy</button>
+
+        {props.copyButton && (
+          <button className="button" onClick={copyToClipboard}>
+            Copy
+          </button>
+        )}
       </div>
       <div
         className={`control ${props.loading ? "is-loading" : ""} ${css.textareaContainer}`}

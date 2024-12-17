@@ -23,6 +23,7 @@ export function OutputsColumn() {
           title={section.heading}
           text={section.content}
           loading={loading}
+          copyButton
         />
       ))}
     </>
