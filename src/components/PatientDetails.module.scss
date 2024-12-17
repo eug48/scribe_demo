@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  gap: 1rem;
+
+  // center items vertically in cross axis
+  align-items: center;
+
+  h2 {
+    margin-bottom: 0 !important;
+  }
+
+  margin-bottom: 1em;
+}

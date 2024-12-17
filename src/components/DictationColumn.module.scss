@@ -1,0 +1,22 @@
+.container {
+  height: 100%;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  button {
+    margin-right: 1em;
+  }
+
+  .consentWarning {
+    color: #c78b00;
+    font-weight: bold;
+  }
+}
